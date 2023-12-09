@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --progressbar-bg: lightgrey;
+    --start: red;
+    --middle: blue;
+    --finish: green;
+} 
+@keyframes backcolour {
+    25% {background-color: var(--start); width: 33%; }
+    50% {background-color: var(--middle); width: 66%}
+    75% {background-color: var(--finish); width: 100%;}
+    100% {background-color: var(--finish); width: 100%;}
+    
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--progressbar-bg);
+    height: 30px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.progress-bar {
+    position: relative;
+    background-color: var(--start);
+    height: 30px;
+    width: 10%;
+    border-radius: 20px;
+    animation: backcolour 6s linear 2s infinite;
+}
+
+

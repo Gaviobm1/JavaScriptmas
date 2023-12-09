@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mountains of Christmas', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#wishlist {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 0.5rem;
+
+}
+
+.wishform {
+    display: flex;
+    flex-direction: column;
+}
+
+#wishButton {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-family: 'Mountains of Christmas', serif;
+    border: none;
+    background-color: #DF2E38;
+    color: #DDF7E3;
+    margin: 10px;
+}
+
+#wishButton:hover {
+    color: #C7E8CA;
+    transition: 0.3s;
+}
+
+#wishitem {
+    font-size: 2.5rem;
+    font-family: 'Mountains of Christmas', serif;
+    background-color: #5D9C59;
+    color: #DDF7E3;
+    border-radius: 5px;
+    border: none;
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+input:focus {
+    outline: none;
+}
+label {
+    font-size: 1.7rem;
+    text-align: center;
+    background-color: #DF2E38;
+    color: #DDF7E3;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+.wishDivRed {
+    text-align: center;
+    font-size: 4rem;
+    color: #DF2E38;
+    padding: 10px;
+    margin: 10px;
+}
+
+.wishDivGreen {
+    text-align: center;
+    font-size: 4rem;
+    color: #5D9C59; 
+    padding: 10px;
+    margin: 10px;
+}
+
+.wishDivRed:hover{
+    transition: .5s;
+    #deleteBut {
+    background-color: #DF2E38;
+    color: #C7E8CA;
+    text-align: center;
+    visibility: visible;
+    }
+}
+
+.wishDivGreen:hover {
+    transition: .5s;
+    #deleteBut {
+    background-color: #5D9C59;
+    color: #C7E8CA;
+    text-align: center;
+    visibility: visible;
+    }
+}
+
+#deleteBut {
+    position: absolute;
+    left: 62%;
+    border-radius: 100%;
+    border: none;
+    visibility: hidden;
+}
