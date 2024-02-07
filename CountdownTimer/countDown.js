@@ -1,5 +1,5 @@
 setInterval(function renderCountdown(){
-    const christmas = new Date(2023, 11, 25);
+    const christmas = new Date('June 28, 2024 21:30:00');
     const now = new Date();
     const diff = christmas.getTime() - now.getTime();
     
